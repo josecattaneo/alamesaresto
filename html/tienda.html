@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alamesa: un restaurante con propósito. Buena comida, inclusión laboral y una mesa donde todos tienen lugar." />
+    <title>Alamesa | Tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/tienda.css" />
+    <link rel="stylesheet" href="../css/tipografia.css" />
+  </head>
+  <body>
+    <div class="page-shell shop-shell">
+      <header class="topbar" id="inicio">
+        <a class="brand" href="../index.html" aria-label="Alamesa, volver al inicio"><img src="../img/logo.png" alt="Alamesa" /></a>
+        <nav class="main-navigation" id="navegacion-principal" aria-label="Navegación principal">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="menu.html">Menú</a>
+          <a class="shop-link" href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="reserva.html">Reserva</a>
+        </nav>
+        <div class="header-actions">
+          <a class="reserve-btn" href="reserva.html">Reserva</a>
+          <button class="menu-btn" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </header>
+      <main class="shop-page">
+        <section class="shop-hero" aria-labelledby="shop-title">
+          <div class="shop-hero-photos" role="img" aria-label="El equipo de Alamesa compartiendo juegos de mesa y risas en el restaurante">
+            <div></div><div></div><div></div>
+            <span class="shop-games-caption">¿Jugamos?</span>
+          </div>
+          <h1 id="shop-title">Nuestros Juegos Alamesa</h1>
+          <p class="shop-games-description">Cocinamos, creamos juegos y también jugamos. En Alamesa, los juegos son otra forma de encontrarnos, compartir y divertirnos con quienes queremos.</p>
+          <p class="shop-games-description">La mesa nos reúne para comer, pero también para jugar y disfrutar de la sobremesa. Porque alrededor de una mesa también hay lugar para las risas, la imaginación y los buenos momentos.</p>
+          <p class="shop-games-description">Podés encontrar nuestros juegos en el restaurante, disfrutarlos en nuestras mesas o llevarlos a casa para seguir jugando con quienes querés.</p>
+        </section>
+        <div class="shop-play-message">
+          <p class="shop-play-line"><span>En la</span><img class="shop-games-illustration" src="../img/mesa-con-juegos.png" alt="mesa" /><span>también se juega</span></p>
+          <p class="shop-play-question">¡Elegí tu próximo juego!</p>
+        </div>
+        <section class="shop-intro" aria-labelledby="shop-intro-title">
+          <h2 id="shop-intro-title">Llevá la diversión a casa</h2>
+          <p class="store-lead">Descubrí nuestros juegos artesanales, pensados para compartir momentos, despertar la creatividad y disfrutar juntos.</p>
+          <div class="store-toolbar">
+            <button class="store-cart-open" type="button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l3 12h11l3-9H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>Mi carrito <span class="store-cart-count">0</span></button>
+          </div>
+          <div class="store-products" id="store-products"></div>
+          <p class="store-no-results" hidden>No encontramos juegos con esa búsqueda. Probá con otra palabra.</p>
+          <noscript>Para ver el catálogo y usar el carrito, activá JavaScript en tu navegador.</noscript>
+          <div class="store-help">
+            <div><h3>Una mesa, muchas historias</h3><p>Elegí los juegos que te gusten y armá tu carrito. Te ayudamos a coordinar la compra.</p></div>
+            <a href="https://wa.me/541151465348?text=Hola%2C%20quisiera%20consultar%20por%20los%20juegos%20de%20Alamesa." target="_blank" rel="noreferrer">¿Te ayudamos a elegir? ↗</a>
+          </div>
+          <div class="store-faq">
+            <h3>Antes de llevarte la diversión</h3>
+            <details><summary>¿Cómo hago mi pedido?</summary><p>Agregá juegos al carrito y tocá “Consultar mi pedido”. Se abrirá WhatsApp con tu selección para confirmar el precio y la disponibilidad con Alamesa.</p></details>
+            <details><summary>¿Puedo retirarlo en el restaurante?</summary><p>Podés consultar y coordinar el retiro en Maure 1643, Cañitas. Esperá la confirmación de tu pedido antes de acercarte.</p></details>
+            <details><summary>¿Cómo consulto por un envío o el pago?</summary><p>Al enviar tu selección por WhatsApp, consultanos las opciones de envío y los medios de pago disponibles. El carrito no realiza cobros.</p></details>
+          </div>
+        </section>
+        <p class="store-feedback" role="status" aria-live="polite"></p>
+        <dialog class="store-cart" id="store-cart" aria-labelledby="store-cart-title">
+          <div class="store-dialog-header"><h2 id="store-cart-title">Tu carrito</h2><button type="button" class="store-dialog-close" aria-label="Cerrar carrito">×</button></div>
+          <div id="store-cart-items"></div>
+          <div class="store-cart-footer" hidden>
+            <p class="store-cart-summary"></p>
+            <p>Confirmamos el precio y la disponibilidad por WhatsApp antes de realizar la compra.</p>
+            <label for="store-fulfillment">¿Cómo te gustaría recibirlo?</label>
+            <select id="store-fulfillment"><option>Consultar retiro en el restaurante</option><option>Consultar envío</option></select>
+            <a class="store-checkout" target="_blank" rel="noreferrer">Consultar mi pedido ↗</a>
+            <button class="store-clear" type="button">Vaciar carrito</button>
+          </div>
+        </dialog>
+        <dialog class="store-product-dialog" id="store-product-dialog" aria-labelledby="store-product-title">
+          <button type="button" class="store-dialog-close" aria-label="Cerrar detalle del juego">×</button>
+          <div id="store-product-detail"></div>
+        </dialog>
+      </main>
+      <footer class="contact-strip home-footer" id="contacto">
+        <div class="contact-block">
+          <div class="contact-left">
+            <div class="footer-heading">
+              <h2>Todos a la</h2>
+              <span class="footer-doodle" aria-hidden="true">
+                <img src="../img/footer-mesas.jpeg" alt="" />
+              </span>
+            </div>
+            <a class="brand-footer" href="../index.html" aria-label="Alamesa, volver al inicio">
+              <img src="../img/logo.png" alt="" />
+            </a>
+          </div>
+          <address class="contact-right">
+            <a class="mini-item" href="https://www.instagram.com/alamesaresto?rpxt=eG4wcTZoZ3p3MzRm" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle class="icon-outline" cx="12" cy="12" r="4.2"/><circle class="icon-cutout" cx="18" cy="6.5" r="1.2"/></svg>
+              <span>Alamesaresto</span>
+            </a>
+            <a class="mini-item" href="https://maps.google.com/?q=Maure+1643,+Cañitas" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.3 8-13a8 8 0 1 0-16 0c0 5.7 8 13 8 13Z"/><circle class="icon-cutout" cx="12" cy="9" r="2.5"/></svg>
+              <span>Maure 1643, Cañitas</span>
+            </a>
+            <a class="mini-item" href="tel:+541151465348">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 10 2l2 5-2.2 2a15 15 0 0 0 5.2 5.2l2-2.2 5 2-.8 3.4a3 3 0 0 1-3.3 2.3A18 18 0 0 1 2.3 6.1a3 3 0 0 1 2.3-3.3Z"/></svg>
+              <span>011-5146-5348</span>
+            </a>
+          </address>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/tienda.js"></script>
+  </body>
+</html>

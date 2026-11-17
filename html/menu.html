@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alamesa: un restaurante con propósito. Buena comida, inclusión laboral y una mesa donde todos tienen lugar." />
+    <title>Alamesa | Nuestro menú</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/tipografia.css" />
+  </head>
+  <body>
+    <div class="page-shell menu-shell">
+      <header class="topbar" id="inicio">
+        <a class="brand" href="../index.html" aria-label="Alamesa, volver al inicio"><img src="../img/logo.png" alt="Alamesa" /></a>
+        <nav class="main-navigation" id="navegacion-principal" aria-label="Navegación principal">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="menu.html">Menú</a>
+          <a class="shop-link" href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="reserva.html">Reserva</a>
+        </nav>
+        <div class="header-actions">
+          <a class="reserve-btn" href="reserva.html">Reserva</a>
+          <button class="menu-btn" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </header>
+      <main>
+        <section class="menu-hero" aria-labelledby="menu-hero-title">
+          <div class="menu-hero-photos" role="img" aria-label="Mesa con platos de pescado, vegetales, ensalada, pan y postre">
+            <div class="menu-hero-photo"></div>
+            <div class="menu-hero-photo"></div>
+            <div class="menu-hero-photo"></div>
+          </div>
+          <h1 id="menu-hero-title"><span>Nuestra Mesa</span><span>“Sabores que nos unen”</span></h1>
+        </section>
+        <section class="menu-block" id="menu">
+          <div class="menu-intro">
+            <h2>Nuestro menú</h2>
+            <div class="chef-portrait">
+              <img src="../img/chef-takehiro-ohno.jpg" alt="Chef Takehiro Ohno" width="188" height="188" />
+            </div>
+            <p>Detrás de cada plato hay una propuesta pensada para disfrutar de la buena comida y compartir un momento especial. Nuestro menú, diseñado por el chef <strong>Takehiro Ohno</strong>, combina sabores, calidad y una cocina cuidada en cada detalle. Te invitamos a conocer nuestra propuesta, elegir tu plato favorito y sentarte a disfrutar <span class="menu-intro-signature">de <img class="inline-brand" src="../img/logo.png" alt="Alamesa" /><span class="menu-intro-tables" aria-hidden="true"></span>.</span></p>
+          </div>
+
+
+
+          <div class="menu-tabs" id="menu-comidas" role="tablist" aria-label="Categorías del menú">
+            <button class="tab menu-all" type="button" data-categoria="todos">Menú</button>
+            <button class="tab active" type="button" data-categoria="principales">Platos principales</button>
+            <button class="tab" type="button" data-categoria="postres">Postres</button>
+            <button class="tab" type="button" data-categoria="bebidas">Bebidas</button>
+          </div>
+
+          <div class="menu-items" id="lista-platos">
+            <article class="menu-item" data-categoria="principales">
+              <div class="menu-thumb main-dish-photo main-dish-hamburguesa" role="img" aria-label="Hamburguesa Alamesa"></div>
+              <div class="item-copy">
+                <h3>Hamburguesa Alamesa</h3>
+                <p>Hamburguesa casera con papas doradas y una selección de salsas.</p>
+              </div>
+              <div class="item-price">$ 25.000</div>
+            </article>
+
+            <article class="menu-item" data-categoria="principales">
+              <div class="menu-thumb main-dish-photo main-dish-pollo" role="img" aria-label="Pollo al limón"></div>
+              <div class="item-copy">
+                <h3>Pollo al limón</h3>
+                <p>Pollo con puré de batata y vegetales. Acompañado de una salsa de lentejas.</p>
+              </div>
+              <div class="item-price">$ 27.000</div>
+            </article>
+
+            <article class="menu-item" data-categoria="principales">
+              <div class="menu-thumb main-dish-photo main-dish-ensalada" role="img" aria-label="Ensalada Alamesa"></div>
+              <div class="item-copy">
+                <h3>Ensalada Alamesa</h3>
+                <p>Combinación fresca y crocante de hojas verdes, tomates cherry y nueces.</p>
+              </div>
+              <div class="item-price">$ 18.000</div>
+            </article>
+
+            <article class="menu-item" data-categoria="principales">
+              <div class="menu-thumb main-dish-photo main-dish-croquetas" role="img" aria-label="Croquetas de la casa"></div>
+              <div class="item-copy">
+                <h3>Croquetas de la casa</h3>
+                <p>Croquetas crocantes acompañadas de papas doradas, carne al horno y una suave salsa de hierbas.</p>
+              </div>
+              <div class="item-price">$ 31.000</div>
+            </article>
+            <article class="menu-item" data-categoria="postres" hidden>
+              <div class="menu-thumb dessert-photo dessert-flan" role="img" aria-label="Foto ilustrativa de flan casero con caramelo y dulce de leche"></div>
+              <div class="item-copy"><h3>Flan casero</h3><p>Flan con caramelo y dulce de leche.</p></div>
+              <div class="item-price">$ 6.500</div>
+            </article>
+            <article class="menu-item" data-categoria="postres" hidden>
+              <div class="menu-thumb dessert-photo dessert-budin" role="img" aria-label="Foto ilustrativa de budín de pan con caramelo y crema"></div>
+              <div class="item-copy"><h3>Budín de pan</h3><p>Una porción de budín de pan con caramelo y crema.</p></div>
+              <div class="item-price">$ 6.000</div>
+            </article>
+            <article class="menu-item" data-categoria="postres" hidden>
+              <div class="menu-thumb dessert-photo dessert-vigilante" role="img" aria-label="Foto ilustrativa de queso y dulce de membrillo"></div>
+              <div class="item-copy"><h3>Vigilante</h3><p>El clásico queso y dulce de membrillo.</p></div>
+              <div class="item-price">$ 5.500</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-agua" role="img" aria-label="Foto ilustrativa de Agua mineral"></div>
+              <div class="item-copy"><h3>Agua mineral</h3><p>Con gas o sin gas.</p></div>
+              <div class="item-price">$ 3.000</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-gaseosa" role="img" aria-label="Foto ilustrativa de Gaseosas"></div>
+              <div class="item-copy"><h3>Gaseosas</h3><p>Una opción clásica para acompañar tu comida.</p></div>
+              <div class="item-price">$ 3.500</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-limonada" role="img" aria-label="Foto ilustrativa de Limonada"></div>
+              <div class="item-copy"><h3>Limonada</h3><p>Limón y agua, una combinación fresca y tradicional.</p></div>
+              <div class="item-price">$ 4.500</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-jugo" role="img" aria-label="Foto ilustrativa de Jugo de naranja"></div>
+              <div class="item-copy"><h3>Jugo de naranja</h3><p>El sabor de la naranja para acompañar la mesa.</p></div>
+              <div class="item-price">$ 4.500</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-cafe" role="img" aria-label="Foto ilustrativa de Café"></div>
+              <div class="item-copy"><h3>Café</h3><p>Solo, cortado o con leche.</p></div>
+              <div class="item-price">$ 3.000</div>
+            </article>
+            <article class="menu-item" data-categoria="bebidas" hidden>
+              <div class="menu-thumb drink-photo drink-te" role="img" aria-label="Foto ilustrativa de Té"></div>
+              <div class="item-copy"><h3>Té</h3><p>Una infusión clásica para disfrutar de la sobremesa.</p></div>
+              <div class="item-price">$ 2.500</div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="contact-strip home-footer" id="contacto">
+        <div class="contact-block">
+          <div class="contact-left">
+            <div class="footer-heading">
+              <h2>Todos a la</h2>
+              <span class="footer-doodle" aria-hidden="true">
+                <img src="../img/footer-mesas.jpeg" alt="" />
+              </span>
+            </div>
+            <a class="brand-footer" href="../index.html" aria-label="Alamesa, volver al inicio">
+              <img src="../img/logo.png" alt="" />
+            </a>
+          </div>
+          <address class="contact-right">
+            <a class="mini-item" href="https://www.instagram.com/alamesaresto?rpxt=eG4wcTZoZ3p3MzRm" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle class="icon-outline" cx="12" cy="12" r="4.2"/><circle class="icon-cutout" cx="18" cy="6.5" r="1.2"/></svg>
+              <span>Alamesaresto</span>
+            </a>
+            <a class="mini-item" href="https://maps.google.com/?q=Maure+1643,+Cañitas" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.3 8-13a8 8 0 1 0-16 0c0 5.7 8 13 8 13Z"/><circle class="icon-cutout" cx="12" cy="9" r="2.5"/></svg>
+              <span>Maure 1643, Cañitas</span>
+            </a>
+            <a class="mini-item" href="tel:+541151465348">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 10 2l2 5-2.2 2a15 15 0 0 0 5.2 5.2l2-2.2 5 2-.8 3.4a3 3 0 0 1-3.3 2.3A18 18 0 0 1 2.3 6.1a3 3 0 0 1 2.3-3.3Z"/></svg>
+              <span>011-5146-5348</span>
+            </a>
+          </address>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

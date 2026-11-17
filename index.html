@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alamesa: un restaurante con propósito. Buena comida, inclusión laboral y una mesa donde todos tienen lugar."
+    />
+    <title>Alamesa | A la mesa, todos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/tipografia.css" />
+  </head>
+  <body>
+    <div class="page-shell home-shell">
+      <header class="topbar" id="inicio">
+        <a class="brand" href="index.html" aria-label="Alamesa, volver al inicio"><img src="img/logo.png" alt="Alamesa" /></a>
+        <nav class="main-navigation" id="navegacion-principal" aria-label="Navegación principal">
+          <a href="html/nosotros.html">Nosotros</a>
+          <a href="html/menu.html">Menú</a>
+          <a class="shop-link" href="html/tienda.html">Tienda</a>
+          <a href="html/contacto.html">Contacto</a>
+          <a href="html/reserva.html">Reserva</a>
+        </nav>
+        <div class="header-actions">
+          <a class="reserve-btn" href="html/reserva.html">Reserva</a>
+          <button class="menu-btn" id="boton-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </header>
+
+      <main>
+      <section class="hero-panel">
+        <div class="hero-image">
+          <video class="hero-tour" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="img/hero-alamesa.jpg" aria-label="Recorrido animado por el salón, las mesas y la cocina de Alamesa">
+            <source src="assets/video-alamesa-final.mp4" type="video/mp4" />
+            Tu navegador no permite reproducir el video.
+          </video>
+          <div class="hero-copy">
+            <h1 class="hero-title">A la mesa, todos...</h1>
+            <a href="html/nosotros.html" class="ghost-link">Conocé más</a>
+          </div>
+        </div>
+      </section>
+
+        <section class="values-block">
+          <div class="value-grid">
+            <article class="value-card">
+              <a class="nosotros-value-link" href="html/menu.html">
+              <div class="value-icon image-icon icon-food" role="img" aria-label="Plato con cubiertos"></div>
+              <h3>Comida de Calidad</h3>
+              </a>
+            </article>
+            <article class="value-card">
+              <a class="nosotros-value-link" href="html/equipo.html">
+              <div class="value-icon image-icon icon-team" role="img" aria-label="Tres personas juntas"></div>
+              <h3>Nuestro Equipo</h3>
+              </a>
+            </article>
+            <article class="value-card">
+              <a class="nosotros-value-link" href="html/familia.html">
+              <div class="value-icon image-icon icon-home" role="img" aria-label="Familia reunida"></div>
+              <h3>Como en Casa</h3>
+              </a>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="contact-strip home-footer" id="contacto">
+        <div class="contact-block">
+          <div class="contact-left">
+            <div class="footer-heading">
+              <h2>Todos a la</h2>
+              <span class="footer-doodle" aria-hidden="true">
+                <img src="img/footer-mesas.jpeg" alt="" />
+              </span>
+            </div>
+            <a class="brand-footer" href="index.html" aria-label="Alamesa, volver al inicio">
+              <img src="img/logo.png" alt="" />
+            </a>
+          </div>
+          <address class="contact-right">
+            <a class="mini-item" href="https://www.instagram.com/alamesaresto?rpxt=eG4wcTZoZ3p3MzRm" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle class="icon-outline" cx="12" cy="12" r="4.2"/><circle class="icon-cutout" cx="18" cy="6.5" r="1.2"/></svg>
+              <span>Alamesaresto</span>
+            </a>
+            <a class="mini-item" href="https://maps.google.com/?q=Maure+1643,+Cañitas" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.3 8-13a8 8 0 1 0-16 0c0 5.7 8 13 8 13Z"/><circle class="icon-cutout" cx="12" cy="9" r="2.5"/></svg>
+              <span>Maure 1643, Cañitas</span>
+            </a>
+            <a class="mini-item" href="tel:+541151465348">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 10 2l2 5-2.2 2a15 15 0 0 0 5.2 5.2l2-2.2 5 2-.8 3.4a3 3 0 0 1-3.3 2.3A18 18 0 0 1 2.3 6.1a3 3 0 0 1 2.3-3.3Z"/></svg>
+              <span>011-5146-5348</span>
+            </a>
+          </address>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

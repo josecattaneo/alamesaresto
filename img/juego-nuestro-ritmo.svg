@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460">
+  <rect width="600" height="460" fill="#e7e5d9"/>
+  <ellipse cx="300" cy="379" rx="220" ry="22" fill="#d2cfbf"/>
+  <g transform="translate(62 74) rotate(-5 225 150)">
+    <rect width="450" height="288" rx="20" fill="#c7aa7f"/>
+    <rect x="8" y="8" width="434" height="272" rx="15" fill="#faf7ee"/>
+    <text x="225" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#354330">A NUESTRO RITMO</text>
+    <path d="M60 220V110q0-35 40-35h245q40 0 40 40v90q0 30-40 30H90" fill="none" stroke="#dbd3bd" stroke-width="31" stroke-linecap="round"/>
+    <circle cx="60" cy="208" r="20" fill="#8da777"/>
+    <rect x="42" y="100" width="36" height="36" rx="6" fill="#d99c6a"/>
+    <path d="m136 55 23 38h-46Z" fill="#7793a5"/>
+    <circle cx="236" cy="75" r="20" fill="#d8bb63"/>
+    <rect x="319" y="57" width="36" height="36" rx="6" fill="#8da777"/>
+    <path d="m385 131 23 38h-46Z" fill="#d99c6a"/>
+    <circle cx="344" cy="235" r="20" fill="#7793a5"/>
+    <rect x="222" y="217" width="36" height="36" rx="6" fill="#d8bb63"/>
+    <text x="225" y="153" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#526849">Elegimos. Compartimos.</text>
+    <text x="225" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#526849">Cada uno a su ritmo.</text>
+  </g>
+  <g transform="translate(345 260) rotate(10 75 65)">
+    <rect width="145" height="120" rx="12" fill="#fffdf6" stroke="#d1d4c6" stroke-width="2"/>
+    <circle cx="72" cy="48" r="22" fill="#d8bb63"/>
+    <text x="72" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#354330">Elegí una imagen</text>
+  </g>
+  <g transform="translate(110 309)"><circle cx="24" cy="21" r="14" fill="#8da777"/><path d="M7 54q0-25 17-25t17 25Z" fill="#8da777"/><rect x="55" y="19" width="29" height="29" rx="5" fill="#d99c6a"/><path d="m112 18 20 32H92Z" fill="#7793a5"/></g>
+</svg>
